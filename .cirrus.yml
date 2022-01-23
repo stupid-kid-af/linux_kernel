@@ -1,7 +1,7 @@
 task:
   name: "CompileKernel"
   only_if: $CIRRUS_REPO_OWNER == 'stupid-kid-af'
-  timeout_in: 10000m  
+  timeout_in: 100m  
   container:
       image: marvelmathesh/docker:rom
       cpu: 8
