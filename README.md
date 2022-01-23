@@ -8,6 +8,7 @@ Compile linux kernels through pull request
 - In file '.ciirus.yml' make changes according to you.
 - Open PR in our repository
 
+Estimated time => 5-10 mins
    ## How can you get you kernel downloadable file
 After all this, you kernel should start compiling you can see it by going to your pull req.
 
