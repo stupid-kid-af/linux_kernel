@@ -21,7 +21,7 @@ task:
       - cd linux-5.6.9
       - cp -v /boot/config-$(uname -r) .config
       - sudo apt-get -y install build-essential libncurses-dev bison flex libssl-dev libelf-dev
-      - make menuconfig
+      - make config
       - make -j $(nproc)
       - export CCACHE_EXEC=/usr/bin/ccache
       - ccache -M 60G
