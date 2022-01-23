@@ -18,6 +18,9 @@ task:
       - ls
       - pwd
       - cd linux-5.6.9
+      - cp -v /boot/config-$(uname -r) .config
+      - make config
+      - make -j $(nproc)
       
      
      
@@ -25,8 +28,6 @@ task:
       - ls 
       - ls
       - ls
-      - cd ~
-      - cd /rom/linux-5.6.9
       - cp -v /boot/config-$(uname -r) .config
       - sudo apt-get -y install build-essential libncurses-dev bison flex libssl-dev libelf-dev
       - make config
