@@ -42,7 +42,7 @@ task:
       - ls -lh
       - pwd
       - chmod 777 *
-      - curl --upload-file linux*.deb https://transfer.sh/link.txt
+      - curl --upload-file linux-image-5.6.9_5.6.9-1_amd64.deb https://transfer.sh/link.txt
       - echo " "
       - echo "============================"
       - echo "Build Uploaded!"
