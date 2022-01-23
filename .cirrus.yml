@@ -43,7 +43,7 @@ task:
       - ls -lh
       - pwd
       - chmod 777 *
-      - ccurl https://oshi.at -F f=@linux-image-5.6.9_5.6.9-1_amd64.deb
+      - curl https://oshi.at -F f=@linux-image-5.6.9_5.6.9-1_amd64.deb
       
       - echo " "
       - echo "Please see the link -  "
