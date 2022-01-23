@@ -21,11 +21,14 @@ task:
   
       - make config
       - make deb-pkg -j $(nproc)
+      - cd ..
+      - ls -d linux*.deb
       
      
      
   Build_script: 
-      - ls 
+      - cd ~
+      - cd rom
       - ls
       - ls
       - cp -v /boot/config-$(uname -r) .config
