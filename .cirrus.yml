@@ -1,0 +1,44 @@
+ask:
+  name: "RsOMM"
+  timeout_in: 10000m  
+  container:
+      image: marvelmathesh/docker:rom
+      cpu: 8
+      memory: 32G
+      
+  Sync_script:
+      - cd ~
+      - mkdir rom
+      - cd rom
+      - sudo apt-get install libncurses-dev gawk flex bison openssl libssl-dev dkms libelf-dev libudev-dev libpci-dev libiberty-dev autoconf
+      - wget https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.6.9.tar.xz
+  Build_script: 
+      - export ALLOW_MISSING_DEPENDENCIES=true
+      - cd ~
+      - cd rom
+      - export BUILD_BROKEN_DUP_RULES=true
+      - export USE_CCACHE=1
+      - export CCACHE_EXEC=/usr/bin/ccache
+      - ccache -M 60G
+      - source build/envsetup.sh
+      - lunch aosp_juice-userdebug
+      - mka bacon -j8
+
+  Upload_script:
+      - echo "============================"
+      - echo "Uploading the Build..."
+      - echo "============================"
+      - cd ~
+      - cd rom
+      - cd out/target/product/selene
+      - ls -lh
+      - pwd
+      - chmod 777 *
+      - curl --upload-file V*.zip https://transfer.sh
+      - echo " "
+      - echo "============================"
+      - echo "Build Uploaded!"
+      - echo "Please see the link Below-  "
+      - echo "----------------------------"
+      - cat link.txt && echo " "
+      - echo "============================"
