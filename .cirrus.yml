@@ -14,8 +14,7 @@ task:
       - sudo apt-get -y install libncurses-dev gawk flex bison openssl libssl-dev dkms libelf-dev libudev-dev libpci-dev libiberty-dev autoconf
       - wget https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.6.9.tar.xz
       - unxz -v linux-5.6.9.tar.xz
-      - wget https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.6.9.tar.sign
-      - gpg --verify linux-5.6.9.tar.sign
+     
      
   Build_script: 
       - cd linux-5.6.9
