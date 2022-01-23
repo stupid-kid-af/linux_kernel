@@ -12,7 +12,7 @@ task:
       - cd rom
       
       - wget https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.6.9.tar.xz
-      - unxz -v linux-5.6.9.tar.xz && linux-5.6.9
+      - unxz -v linux-5.6.9.tar.xz && cd linux-5.6.9
       - ls
      
      
