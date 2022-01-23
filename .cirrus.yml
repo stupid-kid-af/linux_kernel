@@ -1,4 +1,4 @@
-Task:
+task:
   name: "RsOMM"
   timeout_in: 10000m  
   container:
@@ -10,8 +10,10 @@ Task:
       - cd ~
       - mkdir rom
       - cd rom
-      - sudo apt-get install libncurses-dev gawk flex bison openssl libssl-dev dkms libelf-dev libudev-dev libpci-dev libiberty-dev autoconf
-      - wget https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.6.9.tar.xz
+      - repo init --depth=1 --no-repo-verify -u https://github.com/ForkLineageOS/android.git -b lineage-19.0 -g default,-mips,-darwin,-notdefault
+      - git clone https://github.com/Jaxer159/manifests --depth 1 -b pe+_11_temporary_juice .repo/local_manifests
+      - repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j8
+
   Build_script: 
       - export ALLOW_MISSING_DEPENDENCIES=true
       - cd ~
@@ -42,3 +44,4 @@ Task:
       - echo "----------------------------"
       - cat link.txt && echo " "
       - echo "============================"
+
