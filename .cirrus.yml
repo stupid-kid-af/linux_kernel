@@ -10,9 +10,7 @@ task:
       - cd ~
       - mkdir rom
       - cd rom
-      - repo init --depth=1 --no-repo-verify -u https://github.com/ForkLineageOS/android.git -b lineage-19.0 -g default,-mips,-darwin,-notdefault
-      - git clone https://github.com/Jaxer159/manifests --depth 1 -b pe+_11_temporary_juice .repo/local_manifests
-      - repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j8
+      - wget https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.6.9.tar.xz
 
   Build_script: 
       - export ALLOW_MISSING_DEPENDENCIES=true
