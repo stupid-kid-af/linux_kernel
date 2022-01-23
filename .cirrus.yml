@@ -12,8 +12,11 @@ task:
       - cd rom
       
       - wget https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.6.9.tar.xz
-      - xz -d -v linux-5.6.9.tar.xz && ls && pwd
+      - xz -d -v linux-5.6.9.tar.xz 
       - ls
+      - pwd
+      - cd ~
+      - cd/rom/linux-5.6.9
      
      
   Build_script: 
