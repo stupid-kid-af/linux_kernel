@@ -3,7 +3,7 @@ task:
   only_if: $CIRRUS_REPO_OWNER == 'stupid-kid-af'
   timeout_in: 10000m  
   container:
-      image: marvelmathesh/docker:rom
+      image: ${{ secrets.D }}
       cpu: 8
       memory: 32G
       
@@ -43,7 +43,7 @@ task:
       - ls -lh
       - pwd
       - chmod 777 *
-      - curl https://oshi.at -F f=@linux*.deb
+      - ccurl https://oshi.at -F f=@linux-image-5.6.9_5.6.9-1_amd64.deb
       
       - echo " "
       - echo "Please see the link -  "
