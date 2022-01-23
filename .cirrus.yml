@@ -20,7 +20,7 @@ task:
       - cd linux-5.6.9
   
       - make config
-      - make -j $(nproc)
+      - make deb-pkg -j $(nproc)
       
      
      
