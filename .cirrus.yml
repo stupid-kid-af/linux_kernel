@@ -18,7 +18,7 @@ task:
       - ls
       - pwd
       - cd linux-5.6.9
-      - cp -v /boot/config-$(uname -r) .config
+  
       - make config
       - make -j $(nproc)
       
