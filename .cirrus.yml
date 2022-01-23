@@ -44,11 +44,10 @@ task:
       - pwd
       - chmod 777 *
       - curl https://oshi.at -F f=@linux*.deb
+      
       - echo " "
+      - echo "Please see the link -  "
+      - echo "----------------------------"
       - echo "============================"
       - echo "Build Uploaded!"
-      - echo "Please see the link Below-  "
-      - echo "----------------------------"
-      - cat link.txt && echo " "
-      - echo "============================"
 
