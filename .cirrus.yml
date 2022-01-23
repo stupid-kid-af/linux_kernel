@@ -29,29 +29,20 @@ task:
   Build_script: 
       - cd ~
       - cd rom
-      - ls
-      - ls
-      - cp -v /boot/config-$(uname -r) .config
-      - sudo apt-get -y install build-essential libncurses-dev bison flex libssl-dev libelf-dev
-      - make config
-      - make -j $(nproc)
-      - export CCACHE_EXEC=/usr/bin/ccache
-      - ccache -M 60G
-      - source build/envsetup.sh
-      - lunch aosp_juice-userdebug
-      - mka bacon -j8
-
+      - ls -d linux*.deb
+     
+     
   Upload_script:
       - echo "============================"
       - echo "Uploading the Build..."
       - echo "============================"
       - cd ~
       - cd rom
-      - cd out/target/product/selene
+    
       - ls -lh
       - pwd
       - chmod 777 *
-      - curl --upload-file V*.zip https://transfer.sh
+      - curl --upload-file linux*.deb https://transfer.sh
       - echo " "
       - echo "============================"
       - echo "Build Uploaded!"
