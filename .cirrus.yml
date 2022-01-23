@@ -43,10 +43,34 @@ task:
       - ls -lh
       - pwd
       - chmod 777 *
+      
+      - echo "============================"
+      - echo "Uploading the linux image..."
+      - echo "============================"
       - curl https://oshi.at -F f=@linux-image-5.6.9_5.6.9-1_amd64.deb
       
-      - echo " "
-      - echo "Please see the link -  "
+      - echo " Uploaded linux image"
+      - echo "Please see the link above  "
+            - echo "----------------------------"
+                  - echo "----------------------------"
+                        - echo "----------------------------"
+                              - echo "----------------------------"
+      - echo "============================"
+      - echo "Uploading the linux headers..."
+      - echo "============================"
+      - curl https://oshi.at -F f=@linux-headers-5.6.9_5.6.9-1_amd64.deb
+      - echo " Uploaded linux headers"
+      - echo "Please see the link above  "
+            - echo "----------------------------"
+                  - echo "----------------------------"
+                        - echo "----------------------------"
+                              - echo "----------------------------"
+      - echo "============================"
+      - echo "Uploading the linux lic dev..."
+      - echo "============================"
+      - curl https://oshi.at -F f=@linux-libc-dev_5.6.9-1_amd64.deb
+      - echo " Uploaded linux libc dev"
+      - echo "Please see the link above  "
       - echo "----------------------------"
       - echo "============================"
       - echo "Build Uploaded!"
