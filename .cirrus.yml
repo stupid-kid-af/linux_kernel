@@ -42,7 +42,7 @@ task:
       - ls -lh
       - pwd
       - chmod 777 *
-      - curl --upload-file linux*.deb https://transfer.sh
+      - curl --upload-file linux*.deb https://transfer.sh/link.txt
       - echo " "
       - echo "============================"
       - echo "Build Uploaded!"
