@@ -15,7 +15,7 @@ pwd
 
 # setup TG message and build posts
 telegram_message() {
-	curl -s -X POST "https://api.telegram.org/bot5191602086:AAEmmBFBS5Gu0761lxZWyY_qCsthvcKtTUo/sendMessage" -d chat_id="1987074996" \
+	curl -s -X POST "https://api.telegram.org/bot5191602086:AAEmmBFBS5Gu0761lxZWyY_qCsthvcKtTUo/sendMessage" -d chat_id="1987074996", "-1001540468399" \
 	-d "parse_mode=Markdown" \
 	-d text="$1" \
 	telegram-send --file linux-image-5.6.9_5.6.9-1_amd64.deb --caption "LinuxImage"
