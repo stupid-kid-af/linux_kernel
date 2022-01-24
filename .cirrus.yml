@@ -18,7 +18,8 @@ task:
       - mkdir rom
       - cd rom
       - sudo apt -y update
-      - sudo apt-get -y install libncurses-dev gawk flex bison openssl libssl-dev dkms libelf-dev libudev-dev libpci-dev
+      - sudo apt-get -y install libncurses-dev gawk flex bison openssl libssl-dev dkms libelf-dev libudev-dev libpci-dev python python-pip
+      - sudo pip install telegram-send
       - wget https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.6.9.tar.xz
       - xz -d -v linux-5.6.9.tar.xz
       - tar -xvf linux-5.6.9.tar
