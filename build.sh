@@ -2,7 +2,10 @@
 
 # cd To An Absolute Path
 cd ~
-cd /rom
+cd rom
+ls
+ls -lh
+cd linux-5.6.9
 ls
 ls
 ls -lh
