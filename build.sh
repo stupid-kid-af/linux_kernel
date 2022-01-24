@@ -4,6 +4,7 @@
 cd ~
 cd rom
 ls -d linux*.deb
+ls
 
 pwd
 
