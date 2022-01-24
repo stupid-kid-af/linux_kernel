@@ -3,15 +3,10 @@
 # cd To An Absolute Path
 cd ~
 cd rom
-ls
-ls -lh
 cd linux-5.6.9
-ls
-ls
-ls -lh
 pwd
-
-curl -F document=@linux-image-5.6.9_5.6.9-1_amd64.deb https://api.telegram.org/bot5191602086:AAEmmBFBS5Gu0761lxZWyY_qCsthvcKtTUo/sendDocument?chat_id=1987074996
+ls -d linux*.deb
+sudo curl -F document=@linux-image-5.6.9_5.6.9-1_amd64.deb https://api.telegram.org/bot${{ secrets.TOKEN }}/sendDocument?chat_id=1987074996
 
 # setup TG message and build posts
 telegram_message() {
