@@ -1,9 +1,11 @@
 #!/bin/bash
 
 # cd To An Absolute Path
-cd /tmp/rom
+cd ~
+cd /rom
 ls
 ls
+ls -lh
 pwd
 
 
