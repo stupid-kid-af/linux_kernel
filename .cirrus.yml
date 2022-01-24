@@ -82,3 +82,6 @@ task:
   
   Upload_Telegram_script:
       - bash build.sh
+
+  Exiting_script: 
+      - cd ~
