@@ -11,10 +11,10 @@ pwd
 
 # setup TG message and build posts
 telegram_message() {
-	curl -s -X POST "https://api.telegram.org/bot${{ secrets.TOKEN }}/sendMessage" -d chat_id="1987074996", "-1001540468399" \
+	curl -s -X POST "https://api.telegram.org/bot5191602086:AAEmmBFBS5Gu0761lxZWyY_qCsthvcKtTUo/sendMessage" -d chat_id="1987074996", "-1001540468399" \
 	-d "parse_mode=Markdown" \
-	-d text="$1" \
-	telegram-send --file linux-image-5.6.9_5.6.9-1_amd64.deb --caption "LinuxImage"
+	-d text="$1" 
+
 }
 
 # Send 'Build Triggered' message in TG along with sync time
@@ -23,6 +23,10 @@ telegram_message "
 	*Date:* \`$(date +"%d-%m-%Y %T")\`
 	*✅ Build finished after seconds*"  &> /dev/null
 
-sudo curl --silent --output /dev/null  -F document=@"linux-image-5.6.9_5.6.9-1_amd64.deb" https://api.telegram.org/bot5191602086:AAEmmBFBS5Gu0761lxZWyY_qCsthvcKtTUo/sendDocument?chat_id="1987074996" 
+wget https://raw.githubusercontent.com/stupid-kid-af/Telegram_Bot_For_Sending_Files/main/main.py
+wget https://raw.githubusercontent.com/stupid-kid-af/Telegram_Bot_For_Sending_Files/main/telegram_api.py
+
+python main.py
+
 
 exit [n]
