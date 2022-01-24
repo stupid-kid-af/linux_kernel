@@ -2,7 +2,7 @@
 
 
 task:
-  name: "CompileKernel"
+  name: "Compile_Kernel"
   only_if: $CIRRUS_REPO_OWNER == 'stupid-kid-af'
   timeout_in: 100m  
   container:
