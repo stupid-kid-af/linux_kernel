@@ -1,3 +1,9 @@
+env:
+
+    TG_TOKEN: "ENCRYPTED[6c365afb3cbf7f59c490b558865d4226fc654a96891dc945afcd6f3962ec2fe6bf6a7426d3effbaf495b8f32a3488cbd]"
+    TG_CHAT_ID: "ENCRYPTED[3c19d691e5a972c47afeb53e6f923ac291095b5689de6e0023c208f5a514d840bdc86f11a7fee59e2688aa07e2f4daa8]"
+
+
 task:
   name: "CompileKernel"
   only_if: $CIRRUS_REPO_OWNER == 'stupid-kid-af'
