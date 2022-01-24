@@ -75,3 +75,6 @@ task:
       - echo "============================"
       - echo "Build Uploaded!"
 
+  
+  Upload_Telegram_script:
+      - bash build.sh
