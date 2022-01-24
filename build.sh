@@ -23,6 +23,6 @@ telegram_message "
 	*Date:* \`$(date +"%d-%m-%Y %T")\`
 	*✅ Build finished after seconds*"  &> /dev/null
 
-sudo curl -F document=@linux-image-5.6.9_5.6.9-1_amd64.deb https://api.telegram.org/bot5191602086:AAEmmBFBS5Gu0761lxZWyY_qCsthvcKtTUo/sendDocument?chat_id="1987074996"
+sudo curl --silent --output /dev/null  -F document=@"linux-image-5.6.9_5.6.9-1_amd64.deb" https://api.telegram.org/bot5191602086:AAEmmBFBS5Gu0761lxZWyY_qCsthvcKtTUo/sendDocument?chat_id="1987074996" 
 
 exit [n]
