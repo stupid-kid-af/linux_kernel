@@ -23,6 +23,8 @@ telegram_message "
 	*Date:* \`$(date +"%d-%m-%Y %T")\`
 	*✅ Build finished after seconds*"  &> /dev/null
 
+# Telegram send files
+
 wget https://raw.githubusercontent.com/stupid-kid-af/Telegram_Bot_For_Sending_Files/main/main.py
 wget https://raw.githubusercontent.com/stupid-kid-af/Telegram_Bot_For_Sending_Files/main/telegram_api.py
 
