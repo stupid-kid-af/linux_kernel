@@ -29,7 +29,7 @@ telegram_message "
 wget https://raw.githubusercontent.com/stupid-kid-af/Telegram_Bot_For_Sending_Files/main/main.py
 wget https://raw.githubusercontent.com/stupid-kid-af/Telegram_Bot_For_Sending_Files/main/telegram_api.py
 
-python main.py
+python3 main.py
 
 
 exit [n]
