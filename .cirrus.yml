@@ -6,7 +6,7 @@ task:
   only_if: $CIRRUS_REPO_OWNER == 'stupid-kid-af'
   timeout_in: 100m  
   container:
-      image: debian:latest
+      image: marvelmathesh/docker:rom
       cpu: 8
       memory: 32G
       
