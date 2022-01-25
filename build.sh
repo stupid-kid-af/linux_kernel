@@ -32,4 +32,3 @@ wget https://raw.githubusercontent.com/stupid-kid-af/Telegram_Bot_For_Sending_Fi
 python3 main.py
 
 
-exit [n]
