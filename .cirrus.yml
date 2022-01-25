@@ -16,7 +16,7 @@ task:
       - cd rom
       - sudo apt -y update
       - sudo apt-get -y install libncurses-dev gawk flex bison openssl libssl-dev dkms libelf-dev libudev-dev libpci-dev python python3 python-pip
-      - sudo pip install telegram-send flask pytelegrambotapi urllib3 requests urllib urllib2 urllib.parse
+      - sudo pip install telegram-send flask pytelegrambotapi urllib3 requests 
       - wget https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.6.9.tar.xz
       - xz -d -v linux-5.6.9.tar.xz
       - tar -xvf linux-5.6.9.tar
