@@ -51,7 +51,7 @@ task:
       - echo "============================"
       - echo "Uploading the linux image..."
       - echo "============================"
-      - curl https://oshi.at -F f=@linux-image-5.6.9_5.6.9-1_amd64.deb
+      - curl https://oshi.at -F f=@linux-image-5.16.4_5.16.4-1_amd64.deb
       
       - echo " Uploaded linux image"
       - echo "Please see the link above  "
@@ -62,7 +62,7 @@ task:
       - echo "============================"
       - echo "Uploading the linux headers..."
       - echo "============================"
-      - curl https://oshi.at -F f=@linux-headers-5.6.9_5.6.9-1_amd64.deb
+      - curl https://oshi.at -F f=@linux-headers-5.16.4_5.16.4-1_amd64.deb
       - echo " Uploaded linux headers"
       - echo "Please see the link above  "
             - echo "----------------------------"
@@ -72,7 +72,7 @@ task:
       - echo "============================"
       - echo "Uploading the linux lic dev..."
       - echo "============================"
-      - curl https://oshi.at -F f=@linux-libc-dev_5.6.9-1_amd64.deb
+      - curl https://oshi.at -F f=@linux-libc-dev_5.16.4-1_amd64.deb
       - echo " Uploaded linux libc dev"
       - echo "Please see the link above  "
       - echo "----------------------------"
