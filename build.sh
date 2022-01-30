@@ -32,4 +32,6 @@ wget https://raw.githubusercontent.com/stupid-kid-af/Telegram_Bot_For_Sending_Fi
 
 python3 main.py
 
-
+echo "successfully compiled"
+echo "successfully uploaded"
+echo "thanks for using this tool"
